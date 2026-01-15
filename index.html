@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Editor</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <section class="button-creator">
+        <form id="controls">
+            <label for="text">Text</label>
+            <input type="text" name="text" id="text" placeholder="Button text">
+
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color" placeholder="Button color">
+
+            <label for="backgroundColor">Background Color</label>
+            <input type="color" name="backgroundColor" id="backgroundColor">
+
+            <label for="height">Height</label>
+            <input type="range" name="height" id="height" min="0" max="200" placeholder="Button height">
+
+            <label for="width">Width</label>
+            <input type="range" name="width" id="width" min="0" max="600" placeholder="Button width">
+            
+            <label for="border">Border</label>
+            <input type="text" name="border" id="border" placeholder="Button border">
+
+            <label for="borderRadius">Border Radius</label>
+            <input type="range" name="borderRadius" id="borderRadius" min="0" max="25" placeholder="Button border radius">
+
+            <select name="fontFamily" id="fontFamily">
+                <option value="Arial">Arial</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Monospace">Monospace</option>
+                <option value="Sans-Serif">Sans-Serif</option>
+                <option value="Serif">Serif</option>
+                <option value="Impact">Impact</option>
+                <option value="Lucida Console">Lucida Console</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Webdings">Webdings</option>
+                <option value="Wingdings">Wingdings</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="Comic Neue">Comic Neue</option>
+                <option value="Comic Sans">Comic Sans</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="Comic Neue">Comic Neue</option>
+            </select>
+            
+            <label for="fontSize">Font Size</label>
+            <input type="number" name="fontSize" id="fontSize" placeholder="Button font size">
+
+            <label for="fontWeight">Font Weight</label>
+            <input type="text" name="fontWeight" id="fontWeight" placeholder="Button font weight">
+
+            <label for="textAlign">Text Align</label>
+            <input type="text" name="textAlign" id="textAlign" placeholder="Button text align">
+
+            <label for="textDecoration">Text Decoration</label>
+            <input type="text" name="textDecoration" id="textDecoration" placeholder="Button text decoration">
+
+            <label for="boxShadow">Box Shadow</label>
+            <input type="text" name="boxShadow" id="boxShadow" placeholder="Button text decoration">
+
+        </form>
+
+        <section class="result">
+            <button class="btn">Click me</button>
+    
+            <pre><code class="css"></code></pre>
+        </section>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
