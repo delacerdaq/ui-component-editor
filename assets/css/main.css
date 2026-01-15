@@ -17,10 +17,21 @@ input {
     display: grid;
     grid-gap: 30px;
     padding: 30px;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 350px 1fr;
 }
 
-#reset {
+button[data-action="apply"], button[data-action="delete"] {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .875rem;
+    color: #FFF;
+    background-color: #906241;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#reset, #preset-form button {
     font-family: 'IBM Plex Mono', monospace;
     font-size: .875rem;
     color: #FFF;
@@ -33,7 +44,7 @@ input {
     cursor: pointer;
 }
 
-#controls {
+#controls, .presets {
     font-family: 'IBM Plex Mono', monospace;
     font-size: .875rem;
     background-color: #D2B48C;
