@@ -8,10 +8,15 @@ const controls = document.getElementById('controls');
 const button = document.querySelector('.btn');
 const cssText = document.querySelector('.css');
 
-function render() {
+function render(isReset = false) {
   renderPreview(button, state);
   renderCss(cssText, button);
-  saveState(state);
+
+  if (!isReset) {
+    saveState(state);
+  }
+
+  syncControls(controls, state);
 }
 
 function init() {

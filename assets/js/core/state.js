@@ -19,4 +19,11 @@ export const defaultState = {
   export function updateState(prop, value) {
     state[prop] = value;
   }
+
+  export function resetState() {
+    Object.keys(state).forEach(key => {
+      state[key] = defaultState[key];
+    });
+  }
+  
   

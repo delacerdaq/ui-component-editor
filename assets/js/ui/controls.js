@@ -1,4 +1,5 @@
-import { updateState } from '../core/state.js';
+import { updateState, resetState } from '../core/state.js';
+import { clearState } from '../core/storage.js';
 
 export function initControls(form, onChange) {
   form.addEventListener('input', event => {
@@ -8,6 +9,15 @@ export function initControls(form, onChange) {
     updateState(name, value);
     onChange();
   });
+
+  const resetBtn = document.getElementById('reset');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      resetState();
+      clearState();
+      onChange(true);
+    });
+  }
 }
 
 export function syncControls(form, state) {

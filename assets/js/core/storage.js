@@ -18,3 +18,9 @@ export function loadState(defaultState) {
 
   return loadedState;
 }
+
+export function clearState() {
+  Object.keys(localStorage)
+    .filter(key => key.startsWith('ui-'))
+    .forEach(key => localStorage.removeItem(key));
+}
